@@ -1,7 +1,7 @@
 # people.py
-from decors import logger_askfile
+from decors import param_logger
 
-@logger_askfile
+@param_logger('people2')
 def get_employees(*args, **kwargs):
 	print('this is a people.py')
 	return args, kwargs
